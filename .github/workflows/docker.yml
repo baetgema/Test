@@ -21,8 +21,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/myapp:latest .
+          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/test-image:latest .
 
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.ACR_LOGIN_SERVER }}/myapp:latest
+          docker push ${{ secrets.ACR_LOGIN_SERVER }}/test-image:latest
